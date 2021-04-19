@@ -37,9 +37,9 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
     event.preventDefault();
     const deleteId = event.target.value;
     const data = localStorage.getItem('favoriteDishes');
-    localStorage.clear();
     const newData = JSON.parse(data);
     newData.splice(deleteId, 1);
+    localStorage.clear();
     localStorage.setItem('favoriteDishes', JSON.stringify(newData));
     setFavoriteDishes(newData);
     setFavoriteDish({});
@@ -61,7 +61,10 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
           </li>
         ))}
       </ul>
-      <Dish ingredients={ingredients} currentDish={favoriteDish} />
+      {favoriteDish.idMeal
+        ? <Dish ingredients={ingredients} currentDish={favoriteDish} />
+        : ''}
+
     </div>
   );
 };
