@@ -11,7 +11,6 @@ export const Dish = ({ currentDish, ingredients }) => (
     />
     <h1>
       {currentDish.strMeal}
-      {ingredients.length}
     </h1>
     <p>
       {currentDish.strInstructions}
@@ -25,10 +24,10 @@ export const Dish = ({ currentDish, ingredients }) => (
 
 Dish.propTypes = {
   currentDish: PropTypes.shape({
-    idMeal: PropTypes.number.isRequired,
-    strMealThumb: PropTypes.string.isRequired,
-    strMeal: PropTypes.string.isRequired,
-    strInstructions: PropTypes.string.isRequired,
+    idMeal: PropTypes.string,
+    strMealThumb: PropTypes.string,
+    strMeal: PropTypes.string,
+    strInstructions: PropTypes.string,
   }).isRequired,
   ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
