@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  BrowserRouter, Route, Switch, Redirect,
+  HashRouter, Route, Switch, Redirect, Link,
 } from 'react-router-dom';
 import { FavoritePage } from '../../pages/favorite_dishes/FavoritePage';
 import { App } from '../../App';
@@ -41,18 +41,18 @@ export const RouterComp = () => {
 
   return (
     <div>
-      <BrowserRouter>
-        <a href="/foodify_application/main">Main Page</a>
-        <a href="/foodify_application/favorites">Favorites page</a>
+      <HashRouter basename="/">
+        <Link to="/main">Main Page</Link>
+        <Link to="/favorites">Favorites page</Link>
         <Switch>
           <Route
             exact
-            path="/foodify_application/"
+            path="/"
             render={() => (
-              <Redirect to="/foodify_application/main" />
+              <Redirect to="/main" />
             )}
           />
-          <Route path="/foodify_application/main">
+          <Route path="/main">
             <App
               currentDish={currentDish}
               ingredients={ingredients}
@@ -61,11 +61,11 @@ export const RouterComp = () => {
               setFavoriteDishes={setFavoriteDishes}
             />
           </Route>
-          <Route path="/foodify_application/favorites">
+          <Route path="/favorites">
             <FavoritePage favoriteDishes={favoriteDishes} setFavoriteDishes={setFavoriteDishes} />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

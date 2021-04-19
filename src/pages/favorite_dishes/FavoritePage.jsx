@@ -42,6 +42,8 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
     newData.splice(deleteId, 1);
     localStorage.setItem('favoriteDishes', JSON.stringify(newData));
     setFavoriteDishes(newData);
+    setFavoriteDish({});
+    setIngredients([]);
   };
 
   return (
