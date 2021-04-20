@@ -69,6 +69,8 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
     };
 
     setFavoriteDishes((prevDishes) => [...prevDishes, dish]);
+    setTitle('');
+    setInstruction('');
     setOpen(false);
   };
 
