@@ -49,6 +49,8 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
 
   const handleClose = () => {
     setOpen(false);
+    setTitle('');
+    setInstruction('');
   };
 
   const handleChangeTitle = (event) => {
