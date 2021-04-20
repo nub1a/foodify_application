@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import {
   Button, TextField, Dialog, DialogActions, DialogContent,
-  DialogContentText, DialogTitle, TextareaAutosize,
+  DialogContentText, DialogTitle,
 } from '@material-ui/core';
 import { Dish } from '../dish/Dish';
 import { getIngredients } from '../../utils/utils';
@@ -109,12 +109,16 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
               type="title"
               fullWidth
             />
-            <TextareaAutosize
-              aria-label="maximum height"
+            <TextField
+              margin="dense"
+              id="description"
+              label="Instruction"
+              type="text"
               placeholder="Instruction"
               value={instruction}
               onChange={handleChangeInstruction}
-              style={{ width: '-webkit-fill-available', height: '50px' }}
+              fullWidth
+              multiline
             />
           </DialogContent>
           <DialogActions>

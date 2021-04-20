@@ -1,5 +1,6 @@
 .dish_img {
     width: 200px;
+    border-radius: 50%;
 }
 
 .dish_container {
