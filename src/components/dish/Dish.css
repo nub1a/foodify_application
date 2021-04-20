@@ -1,3 +1,14 @@
 .dish_img {
     width: 200px;
 }
+
+.dish_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients {
+    text-align: start;
+}

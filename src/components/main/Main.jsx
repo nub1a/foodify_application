@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './App.css';
-import { Dish } from './components/dish/Dish';
+import { Button } from '@material-ui/core';
+import './style.css';
+import { Dish } from '../dish/Dish';
 
-export const App = ({
+export const Main = ({
   currentDish, ingredients, fetchRandomDish, saveToFavorite, setFavoriteDishes,
 }) => {
   useEffect(() => {
@@ -14,20 +15,15 @@ export const App = ({
   }, []);
 
   return (
-    <div className="App">
-
-      <button
-        type="button"
-        onClick={() => (fetchRandomDish())}
-      >
-        Skip
-      </button>
-      <button
-        type="button"
-        onClick={() => (saveToFavorite())}
-      >
-        Save
-      </button>
+    <div className="app">
+      <div className="button_container">
+        <Button variant="contained" color="default" onClick={() => (fetchRandomDish())}>
+          Skip
+        </Button>
+        <Button variant="contained" color="default" onClick={() => (saveToFavorite())}>
+          Save
+        </Button>
+      </div>
       <Dish
         currentDish={currentDish}
         ingredients={ingredients}
@@ -36,7 +32,7 @@ export const App = ({
   );
 };
 
-App.propTypes = {
+Main.propTypes = {
   currentDish: PropTypes.shape({
     idMeal: PropTypes.string,
     strMealThumb: PropTypes.string,

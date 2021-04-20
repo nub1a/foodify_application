@@ -26,7 +26,7 @@ You need to create an application which will allow the user to get a random reci
 - You can use UI libraries
 - Your app should be responsive and be able to adopt to mobile devices
 - Storing data in local-storage will be a plus
-- App should be stored on public github repo
+- Main should be stored on public github repo
 - You should use gh-pages to host your project
 - Make sure you provide both github and gh-pages links to our HR, when you finish the project
 

@@ -3,22 +3,32 @@ import PropTypes from 'prop-types';
 import './Dish.css';
 
 export const Dish = ({ currentDish, ingredients }) => (
-  <div>
-    <img
-      src={currentDish.strMealThumb}
-      className="dish_img"
-      alt="Dish"
-    />
+  <div className="dish_container">
+    {currentDish.strMealThumb ? (
+      <img
+        src={currentDish.strMealThumb}
+        className="dish_img"
+        alt="Dish"
+      />
+    )
+      : ''}
+
     <h1>
       {currentDish.strMeal}
     </h1>
+    {ingredients.length
+      ? (
+        <ul className="ingredients">
+
+          <h3>Ingredients:</h3>
+          {ingredients.map((data) => (<li key={data}>{data}</li>))}
+        </ul>
+      )
+      : ''}
+
     <p>
       {currentDish.strInstructions}
     </p>
-    <ul>
-      Ingredients:
-      {ingredients.map((data) => (<li key={data}>{data}</li>))}
-    </ul>
   </div>
 );
 
