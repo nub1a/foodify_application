@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Foodify application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Write here about your project in two-three sentences.
+- [DEMO LINK](https://nub1a.github.io/foodify_application/)
+## Used technologies:
+- ReactJS
+- React Hooks
+- React Router(Hash)
+- Fetch, Promise
+- CSS
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+You need to create an application which will allow the user to get a random recipe and give him / her an ability to save it in the favorite dishes list.
+- Call the API endpoint “https://www.themealdb.com/api/json/v1/1/random.php” to fetch a random recipe and display it on the main page.
+- Add an ability to save or skip current recipes.
+- Saved recipes should be displayed on the other page (for example favorite recipes) and will persist their state after reloading the page.
+- Implement a modal window with form on the favorite recipes page to allow the user create his / her own recipes. Each recipe has to include a title and a cooking instruction.
 
-### `npm start`
+## Task requirements
+- You should use React for this app.
+- API should be called once on page load, skip button should refetch random data from API
+- You can use any state manager you want or not use it at all
+- When you add custom dish, or when API has no image, you should show placeholder
+- Design is up to you
+- You can use any styling solution you want (sass, styled-components, CSS-in-JS, Tailwind)
+- You can use UI libraries
+- Your app should be responsive and be able to adopt to mobile devices
+- Storing data in local-storage will be a plus
+- App should be stored on public github repo
+- You should use gh-pages to host your project
+- Make sure you provide both github and gh-pages links to our HR, when you finish the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Local deployment
 
-### `npm test`
+### Dependencies
+* Node v12.16.3 and higher
+* NPM v6.14.4 and higher
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Installing
+* Fork and clone this repository
+* Run `npm install` in your terminal
+* Run `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Troubleshooting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Any advise for common problems or issues.
+For any contributing or problem solving you could find me [here]() and [here]()
