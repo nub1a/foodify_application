@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Dish } from '../../components/dish/Dish';
+import { Dish } from '../dish/Dish';
 
 export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
   const [favoriteDish, setFavoriteDish] = useState({});
@@ -48,7 +48,7 @@ export const FavoritePage = ({ favoriteDishes, setFavoriteDishes }) => {
 
   return (
     <div>
-      Favorite Dishes!
+      {favoriteDishes.length ? 'Favorite dishes:' : 'You don`t have favorite dishes'}
       <ul>
         {favoriteDishes.map((dish, index) => (
           <li key={dish.idMeal}>

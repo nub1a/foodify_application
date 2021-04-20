@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   HashRouter, Route, Switch, Redirect, Link,
 } from 'react-router-dom';
-import { FavoritePage } from '../../pages/favorite_dishes/FavoritePage';
+import { FavoritePage } from '../favorite_dishes/FavoritePage';
 import { App } from '../../App';
 import { getRandomDish } from '../../api/dishes';
 
