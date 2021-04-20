@@ -1,6 +1,5 @@
 # Foodify application
 
-Write here about your project in two-three sentences.
 - [DEMO LINK](https://nub1a.github.io/foodify_application/)
 ## Used technologies:
 - ReactJS
@@ -46,5 +45,4 @@ You need to create an application which will allow the user to get a random reci
 
 ## Troubleshooting
 
-Any advise for common problems or issues.
-For any contributing or problem solving you could find me [here]() and [here]()
+For any contributing or problem solving you could mail me sandyk.vladyslav@gmail.com
